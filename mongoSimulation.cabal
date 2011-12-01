@@ -1,0 +1,16 @@
+name: mongoSimulation
+version: 0.1.0
+synopsis: Simulate MongoDB sharding process
+description: Simulate MongoDB sharding process for testing out balancing algorithms
+homepage: http://github.com/TonyGen/mongoSimulation
+category: Database
+license: GPL
+copyright: Copyright (c) 2011 10gen Inc.
+author: Tony Hannan <tony@10gen.com>
+maintainer: Tony Hannan <tony@10gen.com>
+build-type: Simple
+cabal-version: >= 1.2
+executable MongoShardingSim
+  build-depends: base, containers, mtl, random, gloss
+  hs-source-dirs: src
+  main-is: MongoShardingSimulation.hs

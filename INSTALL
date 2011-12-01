@@ -1,0 +1,15 @@
+1. Make sure OpenGL is installed on your OS, usually it comes pre-installed.
+See http://www.opengl.org/wiki/Getting_started
+
+2. Install Haskell (GHC compiler and libraries) via one of the following procedures
+	a. Download and install Haskell Platform from http://hackage.haskell.org/platform/
+	b. Install haskell-platform from your OS package manager like yum, brew, etc.
+
+3. Run cabal install from this directory. It compiles and installs program in a user directory 
+specific to your OS. Last line of install output tells you which directory it is actually stored in.
+$ cabal install
+
+4. Run installed program
+$ <installed-path>/MongoShardingSim
+
+5. Click anywhere on window that pops up to see help
