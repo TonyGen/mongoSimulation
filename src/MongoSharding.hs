@@ -1,6 +1,16 @@
+-- | Algorithm simulating MongoDB sharding, particularly its balancing.
+
 {-# LANGUAGE TupleSections, TypeFamilies, DeriveDataTypeable #-}
 
-module MongoSharding where
+module MongoSharding (
+	emptyDb,
+	runM, evalM, execM,
+	ChunkData(..), ChunkStat(..), Moving(..),
+	get_shards, get_chunks, shardData,
+	addShard, removeShard, insertDocument, Document(..),
+	balanceChunks, migrateChunks,
+	maxChunkSize
+) where
 
 import Prelude hiding (null, lookup, filter, map, zipWith)
 import Control.Applicative ((<$>), (<*>))

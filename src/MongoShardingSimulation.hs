@@ -1,4 +1,9 @@
+-- | Run MongoSharding simulation showing animated graphics of chunks moving between shards.
+-- See README.md for more detailed description.
+
 {-# LANGUAGE TupleSections, RecordWildCards, ScopedTypeVariables #-}
+
+module Main (main) where
 
 import MongoSharding
 import Graphics.PictureUtil
@@ -65,7 +70,7 @@ event (EventKey key Down _ mouse) (db, rs, idoc, help) = case key of
 	_ -> (db, rs, idoc, True)
 event _ x = x
 
-stepInterval = 10  -- milliseconds
+stepIntervalMs = 10  -- milliseconds
 -- ^ Run step function below every 10 milliseconds
 
 step secs (db, (r1 : r2 : rs), idoc, help) = (execM run db, rs, idoc, help) where
