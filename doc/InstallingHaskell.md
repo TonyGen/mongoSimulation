@@ -2,7 +2,7 @@
 1. Install [Haskell Platform](http://hackage.haskell.org/platform/) on your system, or
 2. Install Haskell manually in one directory (decribed below)
 
-## Installing Haskell manually:
+## Installing Haskell manually
 
 ###1. Download and install [GHC](http://www.haskell.org/ghc/download_ghc_7_2_2#binaries), the Haskell compiler:
 **Unix (including Mac)**, download the ghc-7.2...*tar.bz2* file, then

@@ -1,5 +1,3 @@
-# Installing mongoSimulation
-
 ###1. Make sure OpenGL is installed on your OS, it usually comes [pre-installed](http://www.opengl.org/wiki/Getting_started).
 
 ###2. [Install Haskell](doc/InstallingHaskell.md)
