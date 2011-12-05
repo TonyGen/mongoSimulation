@@ -8,11 +8,12 @@
 	$ cd mongoSimulation
 	$ cabal install --bindir=$PWD
 
-###4. Start mongoShardingSim and click anywhere on its window to see help:
+###4. Start MongoShardingSim and click anywhere on its window to see help:
 
 	$ ./MongoShardingSim
 
-###5. To make changes, edit src code then re-install (re-compile):
+###5. To make changes, edit src code then re-install (re-compile) and re-run:
 
 	edit src/*
 	$ cabal install --bindir=$PWD
+	$ ./MongoShardingSim
