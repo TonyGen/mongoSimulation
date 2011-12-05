@@ -7,15 +7,12 @@
 	$ git clone git://github.com/TonyGen/mongoSimulation.git
 	$ cd mongoSimulation
 	$ cabal install --bindir=$PWD
-	$ cd ..
 
 ###4. Run mongoShardingSim and click anywhere on its window to see help:
 
-	$ mongoSimulation/MongoShardingSim
+	$ ./MongoShardingSim
 
 ###5. To make changes, edit src code and re-install (re-compile):
 
-	$ cd mongoSimulation
 	edit src/*
 	$ cabal install --bindir=$PWD
-	$ cd ..
