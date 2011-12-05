@@ -8,7 +8,7 @@
 	$ cd mongoSimulation
 	$ cabal install --bindir=$PWD
 
-###4. Run mongoShardingSim and click anywhere on its window to see help:
+###4. Start mongoShardingSim and click anywhere on its window to see help:
 
 	$ ./MongoShardingSim
 
