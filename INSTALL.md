@@ -12,7 +12,7 @@
 
 	$ ./MongoShardingSim
 
-###5. To make changes, edit src code and re-install (re-compile):
+###5. To make changes, edit src code then re-install (re-compile):
 
 	edit src/*
 	$ cabal install --bindir=$PWD
