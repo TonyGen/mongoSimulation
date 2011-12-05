@@ -1,6 +1,6 @@
 # Two ways to install Haskell:
 1. Install [Haskell Platform](http://hackage.haskell.org/platform/) on your system, or
-2. Install Haskell manually in one directory (decribed below)
+2. Install Haskell manually in one directory (described below)
 
 ## Installing Haskell manually
 
