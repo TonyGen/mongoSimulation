@@ -15,6 +15,6 @@ miterate :: (MonadPlus m) => (a -> m a) -> a -> m a
 miterate act a = mtry a (act a >>= miterate act)
 
 mfold :: (MonadPlus m) => (s -> a -> m s) -> s -> [a] -> m s
--- ^ Loop over elements until failure or list exhausted then return last result
+-- ^ Loop over elements until failure or list exhaustion then return last result
 mfold act s [] = return s
 mfold act s (a : as) = mtry s (act s a >>= \s -> mfold act s as)
